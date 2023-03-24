@@ -12,7 +12,7 @@ $time = $_POST['time-details-dropdown'];
 
 
 $email_from = 'info@dnapesci.com';
-$email_subject = 'DNA PESCI - Expression of Interest'
+$email_subject = 'DNA PESCI - Expression of Interest';
 
 $email_body = "Thank you $name for your interest in DNA PESCI Course.\n
               You have selected $course course starting on $date at $time. \n 
