@@ -1,0 +1,106 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+ </head>
+ <body>
+    <div class="form-container">
+        <h2>Enrolment Form</h2>
+        <form action="sendEmail.php" method="post">
+          <div class="form-field">
+            <label for="fullname"><i class="fas fa-user"></i></label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Full Name*"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="email"><i class="fas fa-envelope"></i></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address*"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="Skypeid"><i class="fa-brands fa-skype"></i></label>
+            <input
+              type="text"
+              id="skypeid"
+              name="skypeid"
+              placeholder="Skype id*"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="pesciprovider"><i class="fa fa-handshake-o" aria-hidden="true"></i></label>
+            <select id="pesciprovider" name="pesciprovider"  title="PESCI Provider" >
+              <option value="">PESCI Provider</option>
+              <option value="ACRRM">ACRRM</option>
+              <option value="IME">IME</option>
+              <option value="RACGP">RACGP</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="course"><i class="fas fa-book"></i></label>
+            <select id="courses" name="course"  title="Please choose" required>
+              <option value="">Choose Course*</option> 
+              <option value="course1">16 Days Course</option>
+              <option value="course2">4 Days Course</option>
+              <option value="course3">Mock Test</option>
+            </select>
+          </div>
+  
+          <!--new-->
+          <div class="form-field" id="date-details" >
+            <label for="date-details-dropdown"><i class="fas fa-calendar-alt"></i></label>
+            <select id="date-details-dropdown" name="date-details-dropdown" placeholder="Choose Date">
+               
+            </select>
+          </div>
+  
+          <div class="form-field" id="time-details" >
+            <label for="time-details-dropdown"><i class="fa-sharp fa-solid fa-clock"></i></label>
+            <select id="time-details-dropdown" name="time-details-dropdown" >
+              <option value="">Choose Time*</option>
+            </select>
+          </div>
+  
+          
+          <!--new end-->
+          
+          <!-- <div class="form-field">
+            <label for="date"><i class="fas fa-calendar-alt"></i></label>
+            <input
+              placeholder="Enrolment Date*"
+              class="textbox-n"
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="date"
+              name="doe"
+              required
+            />
+          </div> -->
+          <div class="form-field">
+            <input type="submit" name="enrol" value="Enrol" />
+          </div>
+        </form>
+      </div>
+      <script src="showDate.js"></script>
+      <script
+      src="https://kit.fontawesome.com/1489f57607.js"
+      crossorigin="anonymous"
+    ></script>
+ </body>
+ </html>
