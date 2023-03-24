@@ -17,18 +17,18 @@ use PHPMailer\PHPMailer\SMTP;
 $mail = new PHPMailer(true);
 
 
-$mail->Host = "smtp.example.com";
+$mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port = 587;
+$mail->Port = 465;
 
 $mail->Username = "arun.chandel86@gmail.com";
-$mail->Password = "password@";
+$mail->Password = "A1r2un51@";
 
 $email_from = 'info@dnapesci.com';
 $email_subject = 'DNA PESCI - Expression of Interest';
 
 $mail->setFrom($email_from , $name);
-$mail->addAddress("dave@example.com", "Dave");
+$mail->addAddress("arun.chandel86@gmail.com", "Dave");
 
 $mail->Subject = $email_subject;
 
