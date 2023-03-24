@@ -22,7 +22,7 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 $mail->Username = "arun.chandel86@gmail.com";
-$mail->Password = "A1r2un51@";
+$mail->Password = "password@";
 
 $email_from = 'info@dnapesci.com';
 $email_subject = 'DNA PESCI - Expression of Interest';
