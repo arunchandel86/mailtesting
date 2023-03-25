@@ -11,7 +11,7 @@ $time = $_POST['time-details-dropdown'];
 
 
 
-$email_from = 'info@dnapesci.com';
+$email_from = 'arunddstha@gmail.com';
 $email_subject = 'DNA PESCI - Expression of Interest';
 
 $email_body = "Thank you $name for your interest in DNA PESCI Course.\n
@@ -36,12 +36,12 @@ $headers = "From:  $email_from \r\n";
 $headers .= "Reply-To: $email \r\n";
 
 mail($to, $email_subject, $email_body, $headers);
-/*
+
 if(mail($to, $subject, $email_body, $headers)){
     echo 'An email has been sent to you successfully. We have received your expression of interest, please check your email to complete your enrolment. \n ';
 } else{
     echo 'Unable to send email. Please try again.';
 }
-*/
+
 header("Location: index.html");
 ?>
