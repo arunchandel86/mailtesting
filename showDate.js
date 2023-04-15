@@ -26,9 +26,9 @@ const course2Date8 = "08 May 2023";
 
 // Define options for each course
 const courseOptions = {
-  course1: ["Choose Date*", course1Date1,course1Date2,course1Date3,course1Date4,course1Date5,course1Date6],
-  course2: ["Choose Date*", course2Date1, course2Date2, course2Date3, course2Date4, course2Date5, course2Date6, course2Date7, course2Date8],
-  course3: ["Choose Date*", "Dates On Demand"],
+  "16 Days Course": ["Choose Date*", course1Date1,course1Date2,course1Date3,course1Date4,course1Date5,course1Date6],
+  "4 Days Course": ["Choose Date*", course2Date1, course2Date2, course2Date3, course2Date4, course2Date5, course2Date6, course2Date7, course2Date8],
+  "Mock Test": ["Choose Date*", "Dates On Demand"],
 };
 
 

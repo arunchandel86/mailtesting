@@ -1,9 +1,29 @@
 <?php
 
+debug_to_console("Test");
 
-$name = $_POST['fullname'];
+function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo " $output";
+}
+
+flog("Something");
+flog("Another line");
+
+function flog($message)
+{
+    $message = date("H:i:s") . " - $message - ".PHP_EOL;
+    print($message);
+    flush();
+    ob_flush();
+}
+$name = $_POST["name"];
+echo " $name ";
 $email = $_POST['email'];
-$skype = $_POST['skype'];
+$skype = $_POST['skypeid'];
 $pesciprovider = $_POST['pesciprovider'];
 $course = $_POST['course'];
 $date = $_POST['date-details-dropdown'];
@@ -35,13 +55,16 @@ $to = $email;
 $headers = "From:  $email_from \r\n";
 $headers .= "Reply-To: $email \r\n";
 
-mail($to, $email_subject, $email_body, $headers);
+echo "$email ".'\r\n'." $name $skype $pesciprovider $course $date $time $email_from $email_subject";
+echo "$email_body ";
 
-if(mail($to, $subject, $email_body, $headers)){
+//mail($to, $email_subject, $email_body, $headers);
+/*
+if(mail($to, $email_subject, $email_body, $headers)){
     echo 'An email has been sent to you successfully. We have received your expression of interest, please check your email to complete your enrolment. \n ';
 } else{
     echo 'Unable to send email. Please try again.';
-}
+} */
 
-header("Location: index.html");
+//header("Location: index.html");
 ?>

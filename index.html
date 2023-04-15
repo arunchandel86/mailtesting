@@ -13,11 +13,11 @@
         <h2>Enrolment Form</h2>
         <form action="sendEmail.php" method="POST">
           <div class="form-field">
-            <label for="fullname"><i class="fas fa-user"></i></label>
+            <label for="name"><i class="fas fa-user"></i></label>
             <input
               type="text"
               id="fullname"
-              name="fullname"
+              name="name"
               placeholder="Full Name*"
               required
             />
@@ -28,7 +28,7 @@
               type="email"
               id="email"
               name="email"
-              placeholder="Email Address*"
+              placeholder="Email Addres1*"
               required
             />
           </div>
@@ -55,23 +55,23 @@
             <label for="course"><i class="fas fa-book"></i></label>
             <select id="courses" name="course"  title="Please choose" required>
               <option value="">Choose Course*</option> 
-              <option value="course1">16 Days Course</option>
-              <option value="course2">4 Days Course</option>
-              <option value="course3">Mock Test</option>
+              <option value="16 Days Course">16 Days Course</option>
+              <option value="4 Days Course">4 Days Course</option>
+              <option value="Mock Test">Mock Test</option>
             </select>
           </div>
   
           <!--new-->
           <div class="form-field" id="date-details" >
             <label for="date-details-dropdown"><i class="fas fa-calendar-alt"></i></label>
-            <select id="date-details-dropdown" name="date-details-dropdown" placeholder="Choose Date">
+            <select id="date-details-dropdown" name="date-details-dropdown" title="Date" placeholder="Choose Date">
                
             </select>
           </div>
   
           <div class="form-field" id="time-details" >
             <label for="time-details-dropdown"><i class="fa-sharp fa-solid fa-clock"></i></label>
-            <select id="time-details-dropdown" name="time-details-dropdown" >
+            <select id="time-details-dropdown" name="time-details-dropdown" title="Time">
               <option value="">Choose Time*</option>
             </select>
           </div>
